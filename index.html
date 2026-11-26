@@ -1,48 +1,20 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client; connect-src 'self' https://www.googleapis.com https://accounts.google.com/gsi/; frame-src https://accounts.google.com/gsi/; style-src 'self' https://accounts.google.com/gsi/style">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Estudio prueba">
-  <meta name="theme-color" content="#161616">
-  <title>Estudio · prueba</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="apple-touch-icon" href="icono.png">
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client; connect-src 'self' https://www.googleapis.com https://accounts.google.com/gsi/; frame-src https://accounts.google.com/gsi/; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; img-src 'self' blob: data:; font-src 'self'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Estudio" />
+  <meta name="theme-color" content="#202020" />
+  <title>Estudio</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icono.png" />
+  <script type="module" crossorigin src="./app.js"></script>
+  <link rel="stylesheet" crossorigin href="./app.css">
 </head>
 <body>
-  <main>
-    <h1>Estudio · prueba de conexión</h1>
-    <p class="nota">Solo usa datos inventados.</p>
-
-    <dl>
-      <dt>Abierta desde</dt><dd id="modo">—</dd>
-      <dt>Conexión a internet</dt><dd id="red">—</dd>
-      <dt>Funciona sin conexión</dt><dd id="offline">—</dd>
-      <dt>Almacenamiento persistente</dt><dd id="persistente">—</dd>
-      <dt>Permiso de Google</dt><dd id="permiso">—</dd>
-    </dl>
-
-    <h2>1. Conectar</h2>
-    <button id="ventana">Conectar (ventana emergente)</button>
-    <button id="redireccion">Conectar (redirección)</button>
-    <button id="olvidar" class="suave">Olvidar el permiso en este dispositivo</button>
-
-    <h2>2. Carpeta oculta de Drive</h2>
-    <button id="listar">Ver archivos de prueba</button>
-    <button id="crear">Crear archivo de prueba</button>
-    <button id="borrar" class="suave">Borrar archivos de prueba</button>
-    <ul id="archivos"></ul>
-
-    <h2>Registro</h2>
-    <button id="copiar" class="suave">Copiar registro</button>
-    <button id="limpiar" class="suave">Vaciar registro</button>
-    <pre id="registro" aria-live="polite"></pre>
-  </main>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <div id="root"></div>
 </body>
 </html>
