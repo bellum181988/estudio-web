@@ -1,6 +1,6 @@
 // Guarda la app para abrirla sin conexión. Al compilar se rellenan la versión y la lista de archivos:
 // cada versión tiene su propia copia completa, para no mezclar archivos de dos versiones.
-const CACHE = 'estudio-99652f495033'
+const CACHE = 'estudio-12cc63f71bee'
 const FILES = ["./","app.css","app.js","estudio-icono.png","google-sans-latin-400-normal.woff2","google-sans-latin-500-normal.woff2","google-sans-latin-600-normal.woff2","google-sans-latin-700-normal.woff2","google-sans-latin-ext-400-normal.woff2","google-sans-latin-ext-700-normal.woff2","icono.png","index.html","manifest.webmanifest","material-symbols-outlined-latin-400-normal.woff2"]
 
 self.addEventListener('install', (e) => {
